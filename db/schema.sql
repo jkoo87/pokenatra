@@ -7,6 +7,7 @@ create table trainers (
   id SERIAL PRIMARY KEY,
   name varchar,
   photo_url varchar,
+  sound varchar,
   nationality varchar
 );
 

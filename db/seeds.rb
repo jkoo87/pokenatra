@@ -16,6 +16,6 @@ Pokemon.create(name: "Gengar", cp: rand(800), poke_type: "ghost poison", img_url
 Pokemon.create(name: "Blastoise", cp: rand(800), poke_type: "water", img_url: "https://img.pokemondb.net/artwork/blastoise.jpg")
 
 
-Trainer.create(name: "Spongebob", photo_url: "http://static.tvgcdn.net/mediabin/galleries/shows/s_z/si_sp/spongebob_squarepants/season1/sponge-bob-square-pants11.jpg")
-Trainer.create(name: "Bruce Lee", photo_url: "http://www.pngall.com/wp-content/uploads/2016/05/Bruce-Lee-PNG-Picture.png")
-Trainer.create(name: "Zombie", photo_url: "https://img.clipartfest.com/826668123ccff7defc79ed3bca7f3d91_mummy-zombie-character-character-vs-character-clipart_618-464.jpeg")
+Trainer.create(name: "Spongebob", photo_url: "http://static.tvgcdn.net/mediabin/galleries/shows/s_z/si_sp/spongebob_squarepants/season1/sponge-bob-square-pants11.jpg", sound: "../sounds/coolest-party-eva.mp3")
+Trainer.create(name: "Bruce Lee", photo_url: "http://www.pngall.com/wp-content/uploads/2016/05/Bruce-Lee-PNG-Picture.png", sound: "../sounds/fighting-scream.mp3")
+Trainer.create(name: "Darth Vador", photo_url: "http://assets2.ignimgs.com/2015/08/06/darth-vader-crossed-arms-1280jpg-88461e1280wjpg-67c0c2_1280w.jpg", sound: "../sounds/i-am-your-father.mp3")
