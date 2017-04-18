@@ -4,10 +4,8 @@
   <select name="id">
     <% @pokemon.each do |pokemon| %>
       <option value="<%= pokemon.id %>"> <%= pokemon.name %> </option>
-
     <% end %>
   </select>
-  <button type="submit">choose</button>
-
-
+  <button type="submit">VIEW</button>
+  <button type="button" name="button" onclick="window.location.href='/pokemons/new'">Add New Pokemon</button>
 </form>

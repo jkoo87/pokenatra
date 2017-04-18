@@ -1,0 +1,11 @@
+<p>Catch Pokemon!</p>
+
+
+<form class="containareon" action="/trainers/<%= @trainer.id %>" method="get">
+  <select name="id">
+    <% @pokemon.each do |pokemon| %>
+      <option value="<%= pokemon.id %>"> <%= pokemon.name %> </option>
+    <% end %>
+  </select>
+  <button type="submit">CATCH</button>
+</form>
