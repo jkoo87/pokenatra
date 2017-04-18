@@ -1,4 +1,4 @@
-/*
+
 
 Uncomment for sick pokestyle
 
@@ -7,14 +7,21 @@ Uncomment for sick pokestyle
   src: url(../fonts/PokemonSolid.ttf) format("truetype");
 }
 
-a, p, h2, h3 {
+a, p, h2, h3, em {
   color: rgb(215, 215, 0);
   text-shadow: rgb(35, 75, 180) 3px 3px 1px;
   -webkit-text-stroke: 2px rgb(55, 95, 200);
   text-decoration: none;
   border-radius: 100px;
+  text-align: center;
 }
 
+.para{
+  border: 15px inset;
+  width: 40%;
+  margin: 0 auto;
+  -webkit-text-stroke: none;
+}
 
 body {
   background-image: url(../images/pokedex.png);
@@ -25,6 +32,16 @@ body {
   font-size: 200%;
 }
 
+button {
+
+}
+
+select, button {
+  font-size: 25px;
+  height: 100%;
+  margin: auto;
+}
+
 a:hover {
   padding: 20px;
   animation: pulse 1s infinite;
@@ -32,7 +49,7 @@ a:hover {
 .containareon, h1 {
   box-sizing: border-box;
   padding: 10px;
-  width: 50%;
+  width: 60%;
   margin: auto;
   background-color: rgba(255, 255, 255, .8);
   text-align: center;
@@ -53,6 +70,24 @@ a:hover {
   border-bottom-color: rgba(225, 225, 225, .5);
 }
 
+
+.trainer{
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 15px inset;
+    border-radius: 100px;
+    border-top-color: rgba(255, 0, 0, .5);
+    border-left-color: rgba(255, 0, 0, .5);
+    border-right-color: rgba(225, 225, 225, .5);
+    border-bottom-color: rgba(225, 225, 225, .5);
+}
+
+.trainerName{
+  margin: 0;
+}
+
 @keyframes pulse {
   0% {
     text-shadow: 4px 4px 3px rgba(255, 255, 255, .3);
@@ -70,4 +105,4 @@ a:hover {
     text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
     background-color: rgba(0, 0, 0, .1);
   }
-}*/
+}

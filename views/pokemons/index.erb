@@ -1,0 +1,13 @@
+<p>Select Pokemon</p>
+
+<form class="containareon" action="/pokemons/view" method="get">
+  <select name="id">
+    <% @pokemon.each do |pokemon| %>
+      <option value="<%= pokemon.id %>"> <%= pokemon.name %> </option>
+
+    <% end %>
+  </select>
+  <button type="submit">choose</button>
+
+
+</form>

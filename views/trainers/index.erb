@@ -1,0 +1,6 @@
+<p>Select Trainer</p>
+
+<% @trainers.each do |trainer| %>
+  <p><a href="/trainers/<%= trainer.id %>"><img class= "trainer" src="<%= trainer.photo_url %>"></a></p>
+    <p class= "trainerName"><%= trainer.name %></p>
+<% end %>
