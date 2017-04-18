@@ -1,6 +1,15 @@
 <h1><%= @trainer.name %></h1>
 <p><img class= "trainer" src="<%= @trainer.photo_url %>"></a></p>
+
+<p><% @pokemon.each do |pokemon| %>
+  <% if pokemon.trainer_id == @trainer.id  %>
+  <a  href="/pokemons/view?id=<%= pokemon.id %>"><img class= "pokemon_mini" src="<%= pokemon.img_url %>"></a>
+  <% end %>
+<% end %></p>
+
 <p class="para"><a href="/trainers/trainer<%= @trainer.id %>/catch_pokemon">CATCH POKEMONS!</a></p>
+
+
 <audio autoplay>
 <source src="<%= @trainer.sound %>" type="audio/mp3">
 </audio>

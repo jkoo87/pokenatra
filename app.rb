@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
+# require 'pry'
 require 'active_record'
 
 require_relative './db/connection'
@@ -23,26 +24,21 @@ get '/trainers/trainer:id/catch_pokemon' do
   erb :"trainers/catch"
 end
 
-# put '/trainers/:id' do
-#   @trainer = Trainer.create
-#
-# end
-
-
-
-
-
-
 
 
 
 
 get '/trainers/:id' do
   @trainer = Trainer.find(params[:id])
+  @pokemon = Pokemon.all
+    if params[:pokemon]
+    @catched_pokemon = Pokemon.find(params[:pokemon])
+    @catched_pokemon.trainer = @trainer
+    @catched_pokemon.save
+    end
+    # binding.pry
   erb :"trainers/show"
 end
-
-
 
 
 

@@ -2,9 +2,9 @@
 
 
 <form class="containareon" action="/trainers/<%= @trainer.id %>" method="get">
-  <select name="id">
+  <select name="pokemon">
     <% @pokemon.each do |pokemon| %>
-      <option value="<%= pokemon.id %>"> <%= pokemon.name %> </option>
+      <option  value="<%= pokemon.id %>"> <%= pokemon.name %> </option>
     <% end %>
   </select>
   <button type="submit">CATCH</button>
